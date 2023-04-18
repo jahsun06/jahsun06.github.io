@@ -1,0 +1,19 @@
+html{
+
+}
+
+body{
+
+}
+
+h1{
+    font-family: 'Audiowide', cursive;
+}
+
+.section-hero{
+    background-color: #444444;
+}
+
+.section-hero h1{
+    color: #FFF;
+}
