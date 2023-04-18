@@ -17,3 +17,7 @@ h1{
 .section-hero h1, h3{
     color: #FFF;
 }
+
+.main{
+    min-height: 30vh;
+}

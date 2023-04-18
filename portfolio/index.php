@@ -10,14 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body>   
-    <div class="header"></div> 
+<body>    
+    <div class="header">
         <div class="section-hero ">
             <div class="container">
                 <div class="profile py-5">
@@ -31,7 +30,7 @@
                 </div> 
             </div>
         </div>
-
+    
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid text-center">
                 <!-- <a class="navbar-brand" href="#">Navbar</a>
@@ -49,25 +48,26 @@
                 </div>
             </div>
         </nav>
-    </div> 
+    </div>
 
     <div class="main">
         
     </div>
 
-    <div class="footer">
-        <div class="container text-center py-3">
+    <div class="footer bg-dark">
+        <div class="container text-center text-white py-3">
             <div class="social-icons">
-                <ul>
-                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
-                </ul>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
             </div>
+            <div class="copyright"><i class="fa-solid fa-copyright"></i> 2023 | Jahsun06</div>
         </div>
     </div>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>    
+    <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>    
 </body>

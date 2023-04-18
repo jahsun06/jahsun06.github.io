@@ -1,14 +1,21 @@
 (function( $ ) {
+    var menu_btn;
+    var url = 'src/controllers/controller.php';
     var APP = {
-        init: function (settings) {
+
+        init: function (settings) {            
             if ($('#main_navbar').length > 0) {
-                REP.search_functions();
+                menu_btn = $(".nav-link");
+                menu_btn.on('click', function(){    
+                    $('body .main').append(appLoader('loading...'));	
+                    APP.showPage();
+                });
             }				
         },
 
         showPage: function (page){
             jQuery.ajax({
-                url: 'src/controller.php',
+                url: url,
                 type: 'POST',
                 data: {
                     action: 'showpage',
@@ -16,9 +23,7 @@
                 },
                 success: function(data, textStatus, xhr) {
                     if (data.success) {														
-                        if(page < data.data.meta.last_page){                            
-                            $('#rep-loader-overlay .message').html('Synching data in <span class="percentage">' + percentage.toFixed(0) + '%</span>')								
-                        }
+                        
                     } else {
                         me.prop("disabled", false).text('Sync Listings');
                         $('.sync-preload-msg').remove();
@@ -27,6 +32,10 @@
                 }
             });
         }
+    }
+
+    var appLoader = function(message){
+        return '<div id="app-loader-overlay"><div class="cv-spinner"><span class="sync-spinner"></span></div><div class="message">' + message+ '</div></div>';
     }
 
     $(document).ready(APP.init);	
